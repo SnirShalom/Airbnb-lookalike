@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Static Template</title>
+    <link rel="stylesheet" href="styles/main.css" />
+  </head>
+  <body>
+    <main>
+      <header>this is top header</header>
+      <header class="scolling__header">scrolling header</header>
+      <div class="main-contant">
+        <img
+          src="../airBnb-lookalike/images/reporter-room-bed-600x400.jpeg"
+          alt="hotel picture"
+        />
+        <h1>this is the best hotel</h1>
+        <div>
+          <p>
+            ipsum dolor sit amet consectetur adipisicing elit. Voluptatem a
+            doloremque nisi dolorum, iure mollitia facilis autem tempora,
+            cupiditate, non illo recusandae. Deleniti qui, exercitationem at
+            eaque quisquam assumenda incidunt natus rem omnis? Ullam quod quasi,
+            harum fugit architecto at. Deserunt veniam sint facilis velit
+            tenetur quia? Animi, maxime. Repudiandae?
+          </p>
+          <br />
+          <br />
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Perspiciatis deserunt delectus impedit, odit eius, quis rem eveniet
+            nihil dolorem voluptas a quaerat, molestiae doloremque nisi nesciunt
+            quibusdam cumque iure maiores?
+          </p>
+          <br />
+          <br />
+          <br />
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt
+            repudiandae enim minus ex dolorum debitis cupiditate consequatur
+            nesciunt asperiores repellat porro assumenda provident, esse ipsam
+            ad! Rerum iste ex eum?
+          </p>
+        </div>
+      </div>
+      <div class="pay-box">
+        <h1>pay now!</h1>
+        <hr style="width: 60%" />
+        <h2>this is the paying detils</h2>
+        <hr style="width: 70%" />
+        <p>
+          only 99999$
+          <br />
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit non
+          pariatur ipsa facilis incidunt ex.
+        </p>
+        <button>chek out</button>
+      </div>
+      <footer>this is the footer</footer>
+    </main>
+  </body>
+  <script>
+    var popHeader = document.querySelector(".scolling__header");
+    window.addEventListener("scroll", function () {
+      console.log(window.scrollY);
+      if (window.scrollY > 150) {
+        popHeader.classList.remove("isHidden");
+      } else {
+        popHeader.classList.add("isHidden");
+      }
+    });
+  </script>
+</html>
